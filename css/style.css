@@ -192,11 +192,24 @@ footer a {
 /* Skip链接样式 */
 .skip-link {
     position: absolute;
-    top: -40px;
+    top: -60px;
+    background-color: #00274c;  /* 深蓝色背景 */
+    color: #ffffff;  /* 白色文字 */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .skip-link:focus {
     top: 20px;
+    outline: 3px solid #ffcb05;  /* 黄色边框增加视觉对比 */
+    color: #ffffff;  /* 确保焦点状态下文字保持白色 */
+}
+
+.skip-link:hover {
+    background-color: #00274c;  /* 保持深蓝色背景 */
+    color: #ffcb05;  /* 悬停时变为黄色，增加对比 */
+    text-decoration: underline;
 }
 
 /* 大屏幕增强 */
