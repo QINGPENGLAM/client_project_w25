@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Needs and Support Services</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href = "">Skip to Main Content</a>
+        <a href = "#main" class="skip-link">Skip to Main Content</a>
         <img src="index_img/U-M_Logo-Hex.png" width="100" alt="University of Michigan official logo in blue">
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Page 1</a></li>
-                <li><a href = "page_2.html">Page 2</a></li>
-                <li><a href = "page_3.html">Page 3</a></li>
+                <li><a href="index.html">Home - Student Success Portal</a></li>
+                <li><a href="page_1.html" class="main-page">Basic Needs Support</a></li>
+                <li><a href="page_2.html">Academic Support</a></li>
+                <li><a href="page_3.html">Mental Health Support</a></li>
             </ul>
         </nav>
         <h1>Basic Needs and Support Services</h1>
     </header>
 
-    <main>
+    <main id="main" class="resources-grid">
         <section>
             <h2>UMSI Support Overview</h2>
             <p>At the University of Michigan School of Information (UMSI), we are committed to supporting our students' academic success by offering a wide array of resources and services. Our academic advising team provides personalized guidance to help you navigate your curriculum, select courses, and address any academic challenges or questions you may encounter during your studies.</p>
@@ -30,11 +32,11 @@
             <h2>Maize and Blue Cupboard</h2>
             <article>
                 <h3><a href="https://mbc.studentlife.umich.edu">Grocery Store</a></h3>
-                <figure>
-                    <img src="image_1/17ws0eDoQCgBh54oasBY71Q-1.png" width="100" alt="Fresh fruits and vegetables available at Maize and Blue Cupboard">
-                    <img src="image_1/17ws0eDoQCgBh54oasBY71Q.png" width="100" alt="Variety of healthy food options at food pantry">
-                    <img src="image_1/2-scaled.jpg" width="100" alt="Shelves stocked with nutritious food items">
-                    <img src="image_1/XP2S1650.jpg" width="100" alt="Maize and Blue Cupboard building exterior">
+                <figure class="image-grid">
+                    <img src="image_1/17ws0eDoQCgBh54oasBY71Q-1.png" alt="Fresh fruits and vegetables available at Maize and Blue Cupboard">
+                    <img src="image_1/17ws0eDoQCgBh54oasBY71Q.png" alt="Variety of healthy food options at food pantry">
+                    <img src="image_1/2-scaled.jpg" alt="Shelves stocked with nutritious food items">
+                    <img src="image_1/XP2S1650.jpg" alt="Maize and Blue Cupboard building exterior">
                 </figure>
                 <p>To ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food.</p>
 
@@ -172,7 +174,10 @@
     </main>
 
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <p>University of Michigan School of Information</p>
+        <p>Student Support Resources</p>
+        <p><a href="https://www.si.umich.edu">UMSI Website</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Academic Advising</a></p>
+        <p>Contact: info@umich.edu | Emergency: 911</p>
     </footer>
 </body>
 </html>
