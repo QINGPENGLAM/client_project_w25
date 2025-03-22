@@ -15,8 +15,8 @@
         <nav>
             <ul>
                 <li><a href="index.html" class="main-page">Home - Student Success Portal</a></li>
-                <li><a href="page_1.html">Basic Needs Support</a></li>
-                <li><a href="page_2.html">Academic Support</a></li>
+                <li><a href="BasicNeed.html">Basic Needs Support</a></li>
+                <li><a href="AcademicSup.html">Academic Support</a></li>
                 <li><a href="page_3.html">Mental Health Support</a></li>
             </ul>
         </nav>
@@ -24,6 +24,7 @@
 
     </header>
     <main id="main" class="home-grid">
+
         <section>
             <h2>Welcome to the UM undergraduates Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for undergraduates School Success</p>
@@ -49,13 +50,11 @@
             </article>
             <article>
                 <h3>Recreational Sports</h3>
-                <figure>
-                    <img src="index_img/IMSB_full-facility2.jpg" width="100" alt="IMSB (Intramural Sports Building) exterior view">
-                    <img src="index_img/og-hours.jpg" width="100" alt="CCRB (Central Campus Recreation Building) facility hours display">
-                    <img src="index_img/og-imsb.jpg" width="100" alt="Students exercising in IMSB fitness center">
-
-                    <figcaption>UMSI out in the fall!</figcaption>
-                </figure>
+                <div class="carousel-container">
+                    <img id="carouselImage1" src="index_img/IMSB_full-facility2.jpg" alt="Recreational Sports Image">
+                    <button id="prevBtn1" class="nav-btn left-btn">←</button>
+                    <button id="nextBtn1" class="nav-btn right-btn">→</button>
+                  </div>
                 <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
             </article>
         </section>
@@ -76,7 +75,7 @@
         </section>
 
         
-        <section id="life-outside-classroom">
+        <section>
             <h2>Life Outside the Classroom</h2>
             <p>undergraduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
             <article>
@@ -126,6 +125,35 @@
                 </ul>
             </article>
         </section>
+        <section>
+            <h2>Feedback</h2>
+            <div class="container">
+                <form action="https://formspree.io/f/mblgjkkj"
+        method="POST">
+                
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="status">Status</label>
+                  <select id="status" name="status">
+                    <option value="undergraduate">undergraduate</option>
+                    <option value="graduate">graduate</option>
+                    <option value="faculty">faculty</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </section>
+
+        
 
     </main>
     <footer>
@@ -133,6 +161,10 @@
         <p>Student Support Resources</p>
         <p><a href="https://www.si.umich.edu">UMSI Website</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Academic Advising</a></p>
         <p>Contact: info@umich.edu | Emergency: 911</p>
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
     </footer>
+    <script src="javascript/script.js"></script>
+
 </body>
+
 </html>

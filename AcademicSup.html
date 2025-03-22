@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <a href = "#main" class="skip-link">Skip to Main Content</a>
         <img src="index_img/U-M_Logo-Hex.png" width="100" alt="University of Michigan official logo in blue">
         <nav>
             <ul>
                 <li><a href="index.html">Home - Student Success Portal</a></li>
-                <li><a href="page_1.html">Basic Needs Support</a></li>
-                <li><a href="page_2.html" class="main-page">Academic Support</a></li>
-                <li><a href="page_3.html">Mental Health Support</a></li>
+                <li><a href="BasicNeed.html">Basic Needs Support</a></li>
+                <li><a href="AcademicSup.html" class="main-page">Academic Support</a></li>
+                <li><a href="MentalHealth.html">Mental Health Support</a></li>
             </ul>
         </nav>
         <h1>Academic Support Services</h1>
@@ -30,9 +31,12 @@
                 <p>Resources available to University of Michigan students, particularly those in the School of Information (UMSI), to support their academic, wellness, and community needs.</p>
                 
                 <figure>
-                    <img src="image_2/UMSI_DesignJam_GreatLakesWaterSafety_01.jpg" width="100" alt="Students collaborating during UMSI Design Jam event">
-                    <img src="image_2/UMSI_MHIClassroom_02202023_08.jpg" width="100" alt="Modern UMSI classroom with students engaged in learning">
-                    <img src="image_2/UMSI_UXatUM_Conference_04.jpg" width="100" alt="UX at Michigan conference presentation">
+                    <div class="carousel-container">
+                        <img id="carouselImage2" src="image_2/UMSI_DesignJam_GreatLakesWaterSafety_01.jpg" alt="MSI Academic Advising Image">
+                        <button id="prevBtn2" class="nav-btn left-btn">←</button>
+                        <button id="nextBtn2" class="nav-btn right-btn">→</button>
+                      </div>
+                    
                 </figure>
 
                 <h3>Available Resources</h3>
@@ -104,7 +108,7 @@
             <h2>Campus Learning Resources</h2>
             <article>
                 <h3>Library and Research Support</h3>
-                <figure>
+                <figure class="image-grid">
                     <img src="image_2/libr1.jpeg" alt="Hatcher Graduate Library reading room with historic architecture" width="200">
                     <img src="image_2/libr2.jpeg" alt="Modern study spaces in Hatcher Graduate Library" width="200">
                     <figcaption>Hatcher Graduate Library - Your Research Hub</figcaption>
@@ -157,13 +161,46 @@
                 </ul>
             </article>
         </section>
+        <section>
+            <h2>Feedback</h2>
+            <div class="container">
+                <form action="https://formspree.io/f/mblgjkkj"
+        method="POST">
+                
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="status">Status</label>
+                  <select id="status" name="status">
+                    <option value="undergraduate">undergraduate</option>
+                    <option value="graduate">graduate</option>
+                    <option value="faculty">faculty</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </section>
     </main>
+
+
 
     <footer>
         <p>University of Michigan School of Information</p>
         <p>Student Support Resources</p>
         <p><a href="https://www.si.umich.edu">UMSI Website</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Academic Advising</a></p>
         <p>Contact: info@umich.edu | Emergency: 911</p>
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+
     </footer>
+    <script src="javascript/script.js"></script>
+
 </body>
 </html>

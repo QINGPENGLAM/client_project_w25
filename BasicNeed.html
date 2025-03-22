@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <a href = "#main" class="skip-link">Skip to Main Content</a>
         <img src="index_img/U-M_Logo-Hex.png" width="100" alt="University of Michigan official logo in blue">
         <nav>
             <ul>
                 <li><a href="index.html">Home - Student Success Portal</a></li>
-                <li><a href="page_1.html" class="main-page">Basic Needs Support</a></li>
-                <li><a href="page_2.html">Academic Support</a></li>
-                <li><a href="page_3.html">Mental Health Support</a></li>
+                <li><a href="BasicNeed.html" class="main-page">Basic Needs Support</a></li>
+                <li><a href="AcademicSup.html">Academic Support</a></li>
+                <li><a href="MentalHealth.html">Mental Health Support</a></li>
             </ul>
         </nav>
         <h1>Basic Needs and Support Services</h1>
@@ -38,6 +39,7 @@
                     <img src="image_1/2-scaled.jpg" alt="Shelves stocked with nutritious food items">
                     <img src="image_1/XP2S1650.jpg" alt="Maize and Blue Cupboard building exterior">
                 </figure>
+                
                 <p>To ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food.</p>
 
                 <h4>Location</h4>
@@ -59,14 +61,12 @@
             <article>
                 <h3><a href="https://basicneeds.studentlife.umich.edu">Basic Needs Support</a></h3>
                 <p>We believe in fair and equitable access to food and other basic resources. This website has been created to share information about the resources available to students.</p>
+                <div class="carousel-container">
+                    <img id="carouselImage3" src="image_1/criticalincident.jpg" alt="Basic Needs Resources Resource Image">
+                    <button id="prevBtn3" class="nav-btn left-btn">←</button>
+                    <button id="nextBtn3" class="nav-btn right-btn">→</button>
+                </div>
 
-                <figure>
-                    <img src="image_1/criticalincident.jpg" width="100" alt="Student support services information display">
-                    <img src="image_1/finance.jpg" width="100" alt="Financial resources and advisory services">
-                    <img src="image_1/food.jpg" width="100" alt="Campus dining and food assistance programs">
-                    <img src="image_1/housingtransportation.jpg" width="100" alt="Housing and transportation services information">
-                    <img src="image_1/healthcare-1.jpg" width="100" alt="Healthcare services available to students">
-                </figure>
 
                 <h3>Quick Resources</h3>
                 <ul>
@@ -119,11 +119,10 @@
         </section>
             <article>
                 <h3>Living in Ann Arbor</h3>
-                <figure>
+                <figure class="image-grid">
                     <img src="image_1/downtown1.jpeg" alt="Downtown Ann Arbor's vibrant Main Street with restaurants and shops" width="200">
                     <img src="image_1/downtown2.jpeg" alt="State Street area showing classic Ann Arbor architecture" width="200">
 
-                    <figcaption>Vibrant Downtown Ann Arbor - Your New Home</figcaption>
                 </figure>
                 <p>Ann Arbor consistently ranks as one of America's best college towns, offering a perfect blend of academic excellence and quality of life. Let us help you discover what makes this city special.</p>
                 
@@ -159,7 +158,7 @@
                 </ul>
 
                 <h4>Winter Survival Guide</h4>
-                <figure>
+                <figure class="image-grid">
                     <img src="image_1/diag1.jpeg" alt="The Diag in winter with snow-covered paths and students" width="200">
                     <img src="image_1/diag2.jpeg" alt="The Diag during fall with colorful autumn leaves" width="200">
                     <figcaption>Beautiful but Cold: Michigan Winters</figcaption>
@@ -175,6 +174,34 @@
                 </ul>
             </article>
         </section>
+        <section>
+            <h2>Feedback</h2>
+            <div class="container">
+                <form action="https://formspree.io/f/mblgjkkj"
+        method="POST">
+                
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="status">Status</label>
+                  <select id="status" name="status">
+                    <option value="undergraduate">undergraduate</option>
+                    <option value="graduate">graduate</option>
+                    <option value="faculty">faculty</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </section>
+
     </main>
 
     <footer>
@@ -182,6 +209,11 @@
         <p>Student Support Resources</p>
         <p><a href="https://www.si.umich.edu">UMSI Website</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Academic Advising</a></p>
         <p>Contact: info@umich.edu | Emergency: 911</p>
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+
     </footer>
+    <script src="javascript/script.js"></script>
+
 </body>
+
 </html>

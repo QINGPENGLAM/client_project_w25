@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <header>
         <a href = "#main" class="skip-link">Skip to Main Content</a>
         <img src="index_img/U-M_Logo-Hex.png" width="100" alt="University of Michigan official logo in blue">
         <nav>
             <ul>
                 <li><a href="index.html">Home - Student Success Portal</a></li>
-                <li><a href="page_1.html">Basic Needs Support</a></li>
-                <li><a href="page_2.html">Academic Support</a></li>
-                <li><a href="page_3.html" class="main-page">Mental Health Support</a></li>
+                <li><a href="BasicNeed.html">Basic Needs Support</a></li>
+                <li><a href="AcademicSup.html">Academic Support</a></li>
+                <li><a href="MentalHealth.html" class="main-page">Mental Health Support</a></li>
             </ul>
         </nav>
         <h1>Mental Health and Community Support</h1>
@@ -181,10 +182,6 @@
                         <p>Connect with experienced first-gen graduate students who understand your unique challenges and can share valuable insights.</p>
                     </li>
                     <li>Monthly Social Events
-                        <figure>
-                            <img src="image_3/firstgen2.jpeg" alt="First-Gen Social Gathering" width="200">
-                            <figcaption>Building Connections Through Shared Experiences</figcaption>
-                        </figure>
                         Join us for:
                         <ul>
                             <li>Coffee Hours: Every Wednesday, 10-11 AM</li>
@@ -218,11 +215,12 @@
                     </li>
                     <li>Outdoor Adventures
                         <figure>
-                            <img src="image_3/UMSI_fallcampus_10.10.22_9.jpg" alt="UMSI campus in fall with vibrant autumn colors" width="200">
-                            <img src="image_3/UMSI_MSICampusTourOrientation_082422_12.jpg" alt="New students during UMSI campus orientation tour" width="200">
-                            <img src="image_3/UMSI_Spring_2022_05.jpg" alt="UMSI building in spring with blooming flowers" width="200">
-                            <img src="image_3/UMSI_SpringCampus_04122022_003.jpg" alt="Students studying outside on campus in spring" width="200">
-                            <img src="image_3/UMSI_Wintercampus02032022_36.jpg" alt="Snow-covered UMSI campus in winter" width="200">
+                            <div class="carousel-container">
+                                <img id="carouselImage4" src="image_3/UMSI_fallcampus_10.10.22_9.jpg" alt="Regular Community Activities Image">
+                                <button id="prevBtn4" class="nav-btn left-btn">←</button>
+                                <button id="nextBtn4" class="nav-btn right-btn">→</button>
+                              </div>
+        
                             <figcaption>Exploring Michigan's Beautiful Outdoors Together</figcaption>
                         </figure>
                         Join organized group activities:
@@ -236,6 +234,33 @@
                 </ul>
             </article>
         </section>
+        <section>
+            <h2>Feedback</h2>
+            <div class="container">
+                <form action="https://formspree.io/f/mblgjkkj"
+        method="POST">
+                
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="status">Status</label>
+                  <select id="status" name="status">
+                    <option value="undergraduate">undergraduate</option>
+                    <option value="graduate">graduate</option>
+                    <option value="faculty">faculty</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </section>
     </main>
 
     <footer>
@@ -243,6 +268,10 @@
         <p>Student Support Resources</p>
         <p><a href="https://www.si.umich.edu">UMSI Website</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Academic Advising</a></p>
         <p>Contact: info@umich.edu | Emergency: 911</p>
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+
     </footer>
+    <script src="javascript/script.js"></script>
+
 </body>
 </html>
